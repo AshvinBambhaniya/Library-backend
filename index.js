@@ -11,6 +11,7 @@ app.use(cors())
 app.use(express.json())
 
 app.use('/api/auth', require('./routes/auth'))
+app.use('/api/book', require('./routes/book'))
 
 app.listen(port, () => {
     console.log(`App listening on at http://localhost:${port}`)
