@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const mongoURI = "mongodb+srv://notebook-backend:notebook-backend@cluster0.efw5kzi.mongodb.net/library-backend?retryWrites=true&w=majority";
+const mongoURI = "mongodb://localhost:27017/Library";
 
 const connectToMongo = () => {
     mongoose.connect(mongoURI, () => {
